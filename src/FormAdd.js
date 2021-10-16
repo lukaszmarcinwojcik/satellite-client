@@ -22,7 +22,6 @@ let currentYear = (new Date()).getFullYear();
 
 
 const FormAdd = (props) => {
-  // const [inputData, setInputData] = useState('');
   const [isAddFormActive, setIsAddFormActive] = useState(false);
   const toggleIsAddFormActive = () => setIsAddFormActive(prevValue => !prevValue);
   
@@ -175,6 +174,7 @@ const handleSubmit = (e) => {
         <div className="loginPanelDiv">
           <label htmlFor="amountOfAmmunition">Ilość amunicji</label>
           <input type="number" autoComplete="off"
+            className={"selectNumber"}
             value={satelliteAdd.amountOfAmmunition}
             min={1} max={10}
             onChange={handleInput}
@@ -183,6 +183,7 @@ const handleSubmit = (e) => {
         <div className="loginPanelDiv">
           <label htmlFor="altitudeInOrbit">Wysokość</label>
           <input type="number" autoComplete="off"
+            className={"selectNumber"}
             value={satelliteAdd.altitudeInOrbit}
             min={200} max={2000}
             onChange={handleInput}
@@ -191,6 +192,7 @@ const handleSubmit = (e) => {
         <div className="loginPanelDiv">
           <label htmlFor="hasAI">Sztuczna Inteligencja</label>
           <input type="checkbox" autoComplete="off"
+            className={"checkboxInput"}
             value={satelliteAdd.hasAI}
             onChange={handleInput}
             name="hasAI" id="hasAI"/>
