@@ -118,6 +118,7 @@ const FormRegistration = (props) => {
                     <div className="loginPanelDiv">
                         <label htmlFor="hasAtomicButton">Przycisk atomowy</label>
                         <input type="checkbox" autoComplete="off"
+                        className={"checkboxInput"}
                         value={userRegistration.hasAtomicButton}
                         onChange={handleInput}
                         name="hasAtomicButton" id="hasAtomicButton"/>

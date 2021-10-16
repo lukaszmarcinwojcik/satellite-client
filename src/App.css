@@ -121,10 +121,7 @@ footer {
 .editFormContainer {
   background-color: lightyellow;
 }
-.formSelect {
-  height: 22px;
-  width: 145px;
-}
+
 /* SATELITE INFO */
 .logoutPanel,
 .deletePanel {
@@ -206,6 +203,29 @@ footer {
 .closeBtn:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+
+.loginPanelDiv label {
+  /* background-color: aqua; */
+  text-align: left;
+  float: left;
+}
+
+input {
+  width: 150px;
+}
+.formSelect {
+  height: 22px;
+  width: 145px;
+}
+.selectNumber {
+  width: 60px;
+  /* height: 10px; */
+}
+.checkboxInput {
+  width: 18px;
+  height: 18px;
+  margin-top: 0px;
 }
 
 .error {
