@@ -1,31 +1,90 @@
-.App {
+body {
+  margin: 0;
+  padding: 0px;
   text-align: center;
+  background-color: lightgray;
+  /* position: relative; */
+  font-family: monospace;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  min-width: 350px;
+  max-width: 760px;
+}
+/* HEADER */
+header {
+  position: relative;
+}
+.logoutBtn {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 5px;
+  background-image: url("./assets/logOut.png");
+  background-color: brown;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
+footer {
+  margin-top: 40px;
+  background-color: lightgreen;
+}
+/* strona startowa i login =========*/
+.logoContainer {
+  width: 350px;
+  text-align: center;
+  margin: auto;
+}
+.loginPanelDiv {
+  text-align: right;
+}
+
+.formContainer {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 0px;
+}
+.satelliteImg {
+  float: left;
+}
+.smallBtn,
+.submitBtn {
+  width: 200px;
+  height: 40px;
+  border: 2px black solid;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.smallBtn {
+  width: 160px;
+  height: 30px;
+  margin: 3px;
+  margin-bottom: 5px;
+}
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .globeImg {
+    animation: App-logo-spin infinite 90s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +94,120 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* DODAJ SATELITE */
+
+.showFormBtn,
+.editFormContainer,
+.addFormContainer {
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  width: 340px;
+  height: 48px;
+  background-color: lightgreen;
+}
+.editFormContainer,
+.addFormContainer {
+  height: auto;
+  width: 300px;
+  padding: 20px;
+  padding-top: 5px;
+  position: relative;
+}
+.editFormContainer {
+  background-color: lightyellow;
+}
+.formSelect {
+  height: 22px;
+  width: 145px;
+}
+/* SATELITE INFO */
+.logoutPanel,
+.deletePanel {
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 340px;
+  background-color: brown;
+}
+.satelliteInfo {
+  position: relative;
+  border: solid black 2px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 700px;
+  min-width: 300px;
+}
+.addFormContainer h2 {
+  text-align: left;
+  margin-left: 8px;
+}
+.satelliteInfo h3 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.satelliteHeader:hover {
+  cursor: pointer;
+}
+.btnContainer {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+
+  height: 40px;
+  width: 126px;
+}
+.closeBtn,
+.moreInfoBtn,
+.editBtn,
+.deleteBtn {
+  height: 32px;
+  width: 32px;
+  margin: 5px;
+  float: left;
+}
+.closeBtn {
+  float: right;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+}
+.moreInfoBtn {
+  background-image: url("./assets/moreInfo.png");
+}
+.editBtn {
+  background-image: url("./assets/edit.png");
+}
+.closeBtn,
+.deleteBtn {
+  background-image: url("./assets/delete.png");
+}
+
+.loginPanelDiv {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.moreInfoBtn:hover,
+.editBtn:hover,
+.deleteBtn:hover,
+.logoutBtn:hover,
+.showFormBtn:hover,
+.smallBtn:hover,
+.submitBtn:hover,
+.closeBtn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.error {
+  color: brown;
 }
