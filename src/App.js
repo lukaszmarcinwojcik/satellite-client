@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+
+import AppContent from './AppContent';
+import Footer from './Footer';
+import LoginPanel from './LoginPanel';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// const API ="https://nuclearsatellite-api.herokuapp.com"
+
+const App = () => {
+  //zalogowany/ wylogowany
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+  const toggleIsUserLoggedIn = () => setIsUserLoggedIn(prevValue => !prevValue);
+
+//sprawdza czy zalogowany
+const checkIsLoggedIn=()=>{
+  let isLogged = JSON.parse(localStorage.getItem("isLogged"));
+  if(isLogged){
+    toggleIsUserLoggedIn();
+  }
 }
+ 
+  useEffect(() => {
+    setTimeout(checkIsLoggedIn,1000)
+    
+  }, []);
+ 
+  return (
+
+    <div className={"App"}>
+    {
+      isUserLoggedIn?
+      <AppContent toggleIsUserLoggedIn={toggleIsUserLoggedIn}/>: 
+      <LoginPanel  toggleIsUserLoggedIn={toggleIsUserLoggedIn} />
+    }
+    <Footer/>
+    </div>
+    
+  );
+};
+
+
 
 export default App;
