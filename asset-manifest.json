@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/satellite-client/static/css/main.07afebd6.chunk.css",
+    "main.js": "/satellite-client/static/js/main.0c6a110c.chunk.js",
+    "main.js.map": "/satellite-client/static/js/main.0c6a110c.chunk.js.map",
+    "runtime-main.js": "/satellite-client/static/js/runtime-main.b2716ada.js",
+    "runtime-main.js.map": "/satellite-client/static/js/runtime-main.b2716ada.js.map",
+    "static/js/2.3d7fd1cf.chunk.js": "/satellite-client/static/js/2.3d7fd1cf.chunk.js",
+    "static/js/2.3d7fd1cf.chunk.js.map": "/satellite-client/static/js/2.3d7fd1cf.chunk.js.map",
+    "index.html": "/satellite-client/index.html",
+    "static/css/main.07afebd6.chunk.css.map": "/satellite-client/static/css/main.07afebd6.chunk.css.map",
+    "static/js/2.3d7fd1cf.chunk.js.LICENSE.txt": "/satellite-client/static/js/2.3d7fd1cf.chunk.js.LICENSE.txt",
+    "static/media/globe.131b27b2.png": "/satellite-client/static/media/globe.131b27b2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2716ada.js",
+    "static/js/2.3d7fd1cf.chunk.js",
+    "static/css/main.07afebd6.chunk.css",
+    "static/js/main.0c6a110c.chunk.js"
+  ]
+}
